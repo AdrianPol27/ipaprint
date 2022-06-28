@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+body {background-color: #ecf1f6; min-height: 100vh; overflow-x: hidden;}
+
+/* Custom Background Color */
+.bg-grad {background-image: linear-gradient(to right, #01c3cc , #7a28e8);}
+.bg-color-1 {background-color: #01c3cc;}
+.bg-color-2 {background-color: #7a28e8;}
+.text-orange {color: #e25111;}
+.text-justify {text-align: justify;}
+
+.vertical-nav {min-width: 17rem; width: 17rem; height: 100%; position: fixed; top: 0; left: 0; background-color: #fff;box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); transition: all 0.4s; z-index: 999999;}
+.vertical-nav .logo {text-align: center; min-width: 150px; padding: 20px 0 0 0;}
+.vertical-nav ul.nav {background-color: #eee; flex-flow: column; height: 100%;}
+.vertical-nav ul.nav .nav-text {font-weight: bold; padding: 20px; margin: 0; color: #777;}
+.vertical-nav ul.nav li.nav-item .active,
+.vertical-nav ul.nav li.nav-item a:hover {background-image: linear-gradient(to right, #01c3cc , #7a28e8); color: #fff;}
+.vertical-nav ul.nav li.nav-item a {color: #555;}
+.vertical-nav ul.nav li.nav-item a:hover .badge {
+  background-color: #fff !important;
+  color: #555;
+}
+#vertical-nav-toggle.active {margin-left: -17rem;}
+
+.content-wrapper {width: calc(100% - 17rem); margin-left: 17rem; transition: all 0.4s;} 
+.content-wrapper .row {padding: 15px 1px 15px 1px;}
+.content-wrapper .row .box-body {background-color: #fff; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); padding: 30px; border-radius: 5px; margin-bottom: 15px;}
+.content-wrapper .row .box-body .box-image {background-color: #e25111; width: 80px; height: 75px; margin: -30px; padding: 1px;}
+.content-wrapper .row .box-body .box-image i {font-size: 3rem; display: flex; justify-content: center; align-items: center; height: 73px; color: #fff;}
+.content-wrapper .row .box-body .box-text {position: absolute;} 
+.content-wrapper .row .box-body .box-text h4 {margin-top: -33px; margin-left: 70px;} 
+.content-wrapper .row .box-body .box-text p {margin-top: -10px; margin-left: 70px; color: #888;} 
+#content.active {width: 100%;margin: 0;}
+
+@media (max-width: 768px) {
+  #vertical-nav-toggle {margin-left: -17rem;}
+  #vertical-nav-toggle.active {margin-left: 0;}
+
+  #content {width: 100%; margin: 0;}
+  #content.active {width: 100%;}
+  #content #sidebarCollapse {transition: all 0.4s;}
+  #content.active #sidebarCollapse {transition: all 0.4s;margin-left: 15rem;}
+}
+  
+    

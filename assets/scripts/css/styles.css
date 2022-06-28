@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('../../fonts/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url('../../fonts/Poppins-Light.ttf');
+}
+@font-face {
+  font-family: 'Poppins-ExtraLight';
+  src: url('../../fonts/Poppins-ExtraLight.ttf');
+}
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: url('../../fonts/Poppins-Medium.ttf');
+}
+@font-face {
+  font-family: 'Chivo-Bold';
+  src: url('../../fonts/Chivo-Bold.ttf');
+}
+
+body {
+  font-family: 'Poppins-Regular';
+  
+}
+
+.text-justify {text-align: justify;}
+.site-navbar {background-color: #f6f6f6;}
+@media (max-width: 992px) {
+  .site-navbar #download-app-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/******************** Site Hero Start ********************/
+.site-hero {
+  background-image: url('../.././images/hero-bg2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding-bottom: 100px;
+}
+.site-hero span {font-family: 'Poppins-ExtraLight';}
+.site-hero h1 {font-family: 'Chivo-Bold';}
+.site-hero p {font-family: 'Poppins-Light';}
+.site-hero a {z-index: 1;}
+@media (max-width: 992px) {
+  .site-hero a {width: 100%;}
+}
+/******************** Site Hero End ********************/
+.site-how-to-use {
+  margin-top: -100px;
+}
+.site-how-to-use .container {background-color: #fff;} 
+.site-how-to-use h1 {font-family: 'Poppins-Medium';}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************** Site Upload File Start ********************/
+.site-upload-file {
+  background-image: url('../.././images/hero-bg2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+@media (max-width: 992px) {
+  .site-upload-file {
+    height: auto;
+    padding: 10px 0 10px 0;
+  }
+}
+.site-upload-file #file-document::-webkit-file-upload-button {display: none;}
+.site-upload-file #file-document::before {
+  content: 'Select Document';
+  background-color: #e3e3e3;
+  padding: 10px;
+  margin-left: -12px;
+  margin-right: 10px;
+}
+
+.site-downloads {
+  /* background-image: linear-gradient(to bottom right, #340178, #5a0d75);
+  line-height: 3px; */
+  background-image: url('../.././images/hero-bg2.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+/******************** Site Upload File End ********************/
